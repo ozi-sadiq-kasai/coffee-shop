@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ background: #fafacc;
+ color: #9F8170;
+}
+
+/* Navbar */
+.container-nav{
+ max-width: 1200px;
+ padding: 1rem 0;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.logo{
+ font-size: 2rem;
+ padding: 0 1rem;
+}
+.pages{
+ list-style-type: none;
+ display: flex;
+ padding: 0 1rem;
+ gap: 5rem;
+}
+.pages li a{
+ text-decoration: none;
+ font-size: 1.5rem;
+ color: #92441d;
+}
+.pages li a:hover{
+ border-bottom: 3px solid #9F8170;
+}
+
+/* Main */
+main{
+ max-width: 1500px;
+}
+#hero-image{
+  width: 100%; 
+  background-image:
+  linear-gradient(to top, rgba(63, 63, 63, 0.969), rgba(136, 94, 4, 0.551)),
+    url("./images/coffee-maker.jpeg" );
+  height: 900px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative;
+  overflow: hidden;
+}
+#hero-text{
+ font-family: 'Dancing Script', cursive;
+ color: wheat;
+ font-size: 7rem;
+ position: relative;
+ left: -100%;
+ animation: slide-in-animation 1.5s forwards;
+}
+@keyframes slide-in-animation {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+ }
+.cards{
+ display: flex;
+ gap: 2rem;
+ padding: 2rem;
+}
+h2{
+ margin-bottom:  10px;
+ text-align: center;
+ color: #92441d;
+}
+.card{
+ width: 33.333%;
+ padding:2rem 0;
+ min-height: 10rem;
+ border-radius: 5px;
+ box-shadow: 1px 3px 8px 0px rgba(148,148,148,0.75);
+ transition: 1.5s;
+}
+.card:hover{
+ transform: translate(10px,10px);
+ box-shadow: 1px 3px 8px 0px rgba(40, 40, 40, 0.73);
+ cursor: pointer;
+}
+p{
+ width: 90%;
+ margin: 0 auto;
+ text-align: center;
+ font-size: 1.2rem;
+ line-height: 1.4;
+}
+
+
+/* Footer */
+.footer-links{
+ display: flex;
+ padding: 1.5rem 0;
+ justify-content: center;
+ list-style-type: none;
+ gap: 2rem;
+ clear: both;
+}
+.footer-links li  a{
+ text-decoration: none;
+}
+
+
+/*  About */
+#about-image{
+ border-radius: 7px;
+ width: 100%;
+}
+#container-about{
+ min-height: 1000px;
+ padding: 1rem;
+ display: grid;
+ grid-template-columns: 2.5fr 5fr;
+ gap: 5px;
+}
+#container-about .heading{
+ text-align: center;
+ margin-top: 1rem;
+}
+#container-about span{
+ color: #92441d;
+}
+.about-text{
+ padding: 10px 10px 0;
+ margin-right: 100px;
+ text-align: left;
+ margin: 0 auto;
+} 
+
+
+.brew{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+
+
