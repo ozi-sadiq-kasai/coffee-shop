@@ -166,23 +166,26 @@ p{
  min-height: 1000px;
  padding: 1rem;
 }
-.about-container{
-  display: grid;
-  gap: 5px;
+#first-grid{
+   display: grid;
  grid-template-columns: 2.5fr 5fr;
+}
+#second-grid{
+   display: grid;
+ grid-template-columns: 4fr 3fr;
 }
 #container-about span{
  color: #92441d;
 }
 .about-container .heading{
   color: #9F8170;
-  margin: 1rem 0 ;
+  margin: 2rem 0 ;
 }
 .about-text{
- padding: 10px 10px 0;
+ padding: 0px 10px 0;
  margin-right: 100px;
- text-align: left;
- margin: 15px auto;
+ text-align: center;
+ margin: 5px auto;
 }
 .lower-text{
   line-height: 1.6;
@@ -196,3 +199,36 @@ p{
 }
 
 
+/* MEDIA QUERIES */
+
+/* smaller phones */
+
+@media screen and (max-width:480px) {
+ main{
+ max-width: 450px;
+ margin: 0 auto;
+}
+#hero-text{
+ font-size: 5rem;
+ width: 60%;
+ text-align: center;
+ margin:9rem auto;
+}
+.cards{
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+ gap: 2rem;
+ padding: 2rem;
+}
+.card{
+ width: 100%;
+}
+/* about */
+#first-grid,#second-grid{
+  display: grid;
+  /* gap: 5px; */
+ grid-template-columns: 1fr;
+}
+}
+
+/* tablets and larger phones */
